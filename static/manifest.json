@@ -1,6 +1,6 @@
 {
-  "name": "Weather",
-  "short_name": "Weather",
+  "name": "News App",
+  "short_name": "News App",
   "icons": [{
       "src": "/static/icon-144x144.png",
       "sizes": "144x144",

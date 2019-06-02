@@ -45,7 +45,7 @@ function CardContainer({ index, headline, activeUrl, setActiveUrl }) {
           <CardHeader
             avatar={
               <Avatar aria-label="Recipe" className={classes.avatar}>
-                R
+                {author ? author.toUpperCase().charAt(0) : ''}
               </Avatar>
             }
             title={author}

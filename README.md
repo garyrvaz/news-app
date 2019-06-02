@@ -1,9 +1,9 @@
-#
+# Example News app with Next.js, next-offline(PWA), Material-UI v4, Axios, React Testing Library and Jest
 
 ## Prerequisites
 
 ### Node Modules
-Node version should be node >= 8. If you've confirmed your node version to be compatible, go ahead and run the following
+Node version should be node >= 8. If you've confirmed your node version to be compatible, go ahead and install the dependencies
 ```bash
 npm i
 ```
