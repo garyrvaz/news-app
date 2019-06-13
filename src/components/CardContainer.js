@@ -78,7 +78,7 @@ function CardContainer({ index, headline, activeUrl, setActiveUrl }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" href={url} target="_blank" color="primary">
+          <Button size="small" href={url} target="_blank" rel="noreferrer" color="primary">
             Read More
           </Button>
         </CardActions>

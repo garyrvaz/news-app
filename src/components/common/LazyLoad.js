@@ -1,6 +1,6 @@
 import ReactLazyLoad from 'react-lazyload'
-import { PLACEHOLDER_IMG } from '@/constants'
 import { useRef, useState, useEffect } from 'react'
+import AnimatedLoader from '@/components/common/AnimatedLoader';
 
 function LazyLoad(props) {
   const [styles, setStyles] = useState({ width: '100%', height: 'auto', marginTop: '-16%' })
@@ -37,7 +37,7 @@ function LazyLoad(props) {
   }
 
   return (
-    <ReactLazyLoad placeholder={<img src={PLACEHOLDER_IMG} />}>
+    <ReactLazyLoad placeholder={<AnimatedLoader />}>
       <img className="article-img" ref={img} {...props} style={styles} onLoad={checkStyles} />
     </ReactLazyLoad>
   )

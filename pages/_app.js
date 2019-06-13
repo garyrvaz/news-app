@@ -17,6 +17,11 @@ import { CATEGORIES } from '@/constants/index'
 class MyApp extends App {
   componentDidMount() {
     // Remove the server-side injected CSS.
+    const link = document.createElement('link')
+    link.href = 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
       jssStyles.parentNode.removeChild(jssStyles)
@@ -47,7 +52,7 @@ class MyApp extends App {
           <MUIContainer maxWidth="xl">
             <nav style={{ margin: '17px 0' }}>
               {CATEGORIES.map(category => (
-                <Link key={category} href={`/${category}`} prefetch>
+                <Link key={category} href={`/${category}`}>
                   <Button
                     className="app-bar__link"
                     color={category === routeCategory ? 'primary' : 'default'}

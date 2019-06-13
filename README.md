@@ -29,10 +29,10 @@ npm run dev
 This runs the dev server on port 4000
 
 ## Running PWA
-To run the PWA you will have to build and do a static export of the project, which will generate files in the `out` directory at root and run it on a local server. I personally used `python3` to do so
+To run the PWA you will have to do a static export of the project, which will generate files in the `out` directory at root and run it on a local server. I personally used `python3` to do so
 
 ```bash
-npm run build && npm run export
+npm run export
 cd out
 python3 -m http.server
 ```

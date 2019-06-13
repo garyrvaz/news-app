@@ -1,5 +1,3 @@
-export const PLACEHOLDER_IMG = '/static/bold-preloader.gif'
-
 export const CATEGORIES = [
   'business',
   'entertainment',

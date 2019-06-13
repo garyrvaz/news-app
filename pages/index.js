@@ -16,7 +16,8 @@ function Home({ router: { query } }) {
 
   async function fetchData() {
     try {
-      const articles = await GET_ARTICLES({ url: TOP_HEADLINES, category: query.category })
+      let articles = await GET_ARTICLES({ url: TOP_HEADLINES, category: query.category })
+      articles = articles.filter( ({ urlToImage }) => urlToImage)
       setHeadlines(articles)
     } catch (e) {
       if (e.response) {
@@ -44,8 +45,8 @@ function Home({ router: { query } }) {
         ) : headlines.length > 0 ? (
           <Grid container item xs={12} spacing={1} data-testid="article-container">
             {headlines.map((headline, index) => {
-              const { urlToImage, title } = headline
-              return urlToImage ? (
+              const { title } = headline
+              return (
                 <Grid key={title} item xs={12} sm={6} md={4} lg={3} xl={2}>
                   <CardContainer
                     index={index}
@@ -54,7 +55,7 @@ function Home({ router: { query } }) {
                     activeUrl={activeUrl}
                   />
                 </Grid>
-              ) : null
+              )
             })}
           </Grid>
         ) : (

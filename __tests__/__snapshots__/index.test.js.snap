@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test all categories load and test micro interaction for each category Testing category: business 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: business 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -47,7 +47,7 @@ exports[`Test all categories load and test micro interaction for each category T
 </DocumentFragment>
 `;
 
-exports[`Test all categories load and test micro interaction for each category Testing category: entertainment 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: entertainment 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -94,7 +94,7 @@ exports[`Test all categories load and test micro interaction for each category T
 </DocumentFragment>
 `;
 
-exports[`Test all categories load and test micro interaction for each category Testing category: health 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: health 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -141,7 +141,7 @@ exports[`Test all categories load and test micro interaction for each category T
 </DocumentFragment>
 `;
 
-exports[`Test all categories load and test micro interaction for each category Testing category: science 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: science 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -188,7 +188,7 @@ exports[`Test all categories load and test micro interaction for each category T
 </DocumentFragment>
 `;
 
-exports[`Test all categories load and test micro interaction for each category Testing category: sports 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: sports 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -235,7 +235,7 @@ exports[`Test all categories load and test micro interaction for each category T
 </DocumentFragment>
 `;
 
-exports[`Test all categories load and test micro interaction for each category Testing category: technology 1`] = `
+exports[`Test all categories load and test micro interaction for each category on card media click Testing category: technology 1`] = `
 <DocumentFragment>
   <div>
     <div
